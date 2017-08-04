@@ -31,6 +31,9 @@ function keyPressed() {
   } else if (keyCode === LEFT_ARROW) {
     snake.xspeed = snake.xspeed =-20;
     snake.yspeed=0;
+  } else if (keyCode === ESCAPE) {
+    snake.xspeed = snake.xspeed =0;
+    snake.yspeed=0;
   }
 }
 function wallBounce(){
